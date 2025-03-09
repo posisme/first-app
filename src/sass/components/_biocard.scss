@@ -1,0 +1,59 @@
+@use "../util/" as u;
+
+.biocard {
+    min-width:15vw;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    @include u.breakpoint(large){
+        min-width:20vw;
+        max-width:25vw;
+        // margin-left:auto;
+        // margin-right:auto;
+        // margin-top:0
+    }
+    &__name{
+        font-size:clamp(1rem,2rem,3rem);
+        text-transform: uppercase;
+        margin:0;
+        text-align: center;
+        color:var(--e-global-color-text);
+        text-shadow: 1px 1px 2px var(--e-global-color-accent);
+    }
+    &__skillshead{
+        font-size:clamp(1.3rem,1.4rem,1.5rem);
+        margin:0;
+    }
+    &__picture{
+        display:block;
+        width:350px;
+        
+
+        // width:u.centerimage(&__picture);
+        height:300px;
+        object-fit: cover;
+        object-position: 80% 20%;
+        margin:auto;
+        
+    }
+
+    &__bio,
+    &__skill{
+        font-size:clamp(1rem,1.1rem,1.3rem);
+    }
+    &__showmore{
+        cursor:pointer;
+    }
+    
+
+    &__skills{
+        margin:0;
+    }
+    &__skill{}
+}
+#biocards{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:auto auto 25px auto;
+}

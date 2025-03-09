@@ -1,0 +1,59 @@
+@use "../util/" as u;
+body {
+    margin:auto;
+    background-color: var(--e-global-color-secondary);
+    
+}
+
+.header{
+    background-color: var(--e-global-color-secondary);
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:var(--e-global-color-accent);
+    margin-bottom:2rem;
+    margin-top:1rem;
+    &__wrapper{
+        @include u.breakpoint(large){
+            display:flex;
+        }
+    }
+    &__title {
+        margin:0;
+        padding:0;
+        text-align: center;
+        font-size:2.5rem;
+        @include u.breakpoint(large){
+            margin:auto;
+            display:block;
+        }
+    }
+
+    &__logo {
+        display:block;
+        margin:auto;
+        @include u.breakpoint(large){
+            margin:0;
+        }
+    }
+}
+.main {
+    background-color: var(--e-global-color-primary);
+    &__meettheteam{
+        color:var(--e-global-color-accent);
+        margin-bottom:2rem;
+        margin-top:1rem;
+        font-size:2rem;
+    }
+    
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    // color:var(--main-text-color);
+    margin:0;
+    padding:0;
+}
+.footer {
+    margin:auto auto 0 auto;
+    color:var(--e-global-color-accent);
+    &__copy{
+        padding:0;
+        margin:0;
+    }
+}

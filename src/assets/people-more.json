@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Randy Pospisil",
+        "bio":"I'm a native of Cedar Rapids, Iowa, but I've lived in Dallas, Texas; Medford, Wisconsin; Topeka, Kansas; and Manchester, Iowa. I'm an Integration Analyst at Leepfrog Technologies in Coralville, IA. I have a Bachelor's Degree from the University of Iowa and a Masters of Theology (Th.M.) from Dallas Theological Seminary. I have two kids (Max and Atticus) and am married to Kim.",
+        "picture":"randy-pospisil-headshot.jpg",
+        "skills":["Public Speaking", "Singing", "Teaching", "Web Design"]
+    },
+    {
+        "name":"Kimberly Pospisil",
+        "bio":"Kim's bio",
+        
+        "skills":["Organizer", "Singing"]
+    },
+    {
+        "name":"Atticus Pospisil",
+        "bio":"Atticus's bio",
+        "skills":["Singing","Conversations"]
+    },
+    {
+        "name":"Sam Proctor",
+        "bio":"Sam's bio",
+        "skills":["Percussion"]
+    },
+    {
+        "name":"Jeff Boesel",
+        "bio":"Jeff B's bio",
+        "skills":["Guitar","Singing"]
+    },
+    {
+        "name":"Jeff Olsen",
+        "bio":"Jeff O's bio",
+        "skills":["Conversation","Pastoral Care"]
+    },
+    {
+        "name":"Jayne Olsen",
+        "bio":"Jayne's bio",
+        "skills":["Conversation","Children's Ministry"]
+    },
+    {
+        "name":"Laura Olsen",
+        "bio":"Laura's bio",
+        "skills":["Piano","Conversation"]
+    }
+]
