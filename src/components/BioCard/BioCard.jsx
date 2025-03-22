@@ -57,7 +57,7 @@ function BioCard(props) {
             <h3 className='biocard__skillshead'>Skills</h3>
             <ul className='biocard__skills'>
                 {peopleVal.skills.map((skill,index) =>(
-                    <li className='biocard__skill'>{skill}</li>
+                    <li className='biocard__skill'>{skill.title}</li>
                 ))}
             </ul>
         </div>

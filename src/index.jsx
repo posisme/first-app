@@ -1,10 +1,17 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import axios from 'axios';
 import "./index.css";
 import "./sass/styles.scss";
 import BioCards from "./components/BioCard/BioCard.jsx"
+import SkillsGallery from "./components/SkillsCard/SkillsGallery.jsx"
 
-
+const apiCall = () => {
+  axios.get('http://localhost:3000').then((data) => {
+    //this console.log will be in our frontend console
+    console.log(data)
+  })
+}
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -21,7 +28,12 @@ createRoot(document.getElementById("root")).render(
       <h2 className="main__meettheteam">Meet The Team</h2>
         <div id='biocards'>
           <BioCards />
-      </div></div>
+        </div>
+        <hr />
+        <div id='skillscards'>
+          <SkillsGallery />
+        </div>
+      </div>
       
     </main>
     <footer className="footer">

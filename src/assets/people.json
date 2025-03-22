@@ -1,8 +1,29 @@
 [
     {
-        "name":"Randy Pospisil",
-        "bio":"I'm a native of Cedar Rapids, Iowa, but I've lived in Dallas, Texas; Medford, Wisconsin; Topeka, Kansas; and Manchester, Iowa. I'm an Integration Analyst at Leepfrog Technologies in Coralville, IA. I have a Bachelor's Degree from the University of Iowa and a Masters of Theology (Th.M.) from Dallas Theological Seminary. I have two kids (Max and Atticus) and am married to Kim.",
-        "picture":"randy-pospisil-headshot.jpg",
-        "skills":["Public Speaking", "Singing", "Teaching", "Web Design"]
+        "name": "Randy Pospisil",
+        "bio": "I'm a native of Cedar Rapids, Iowa, but I've lived in Dallas, Texas; Medford, Wisconsin; Topeka, Kansas; and Manchester, Iowa. I'm an Integration Analyst at Leepfrog Technologies in Coralville, IA. I have a Bachelor's Degree from the University of Iowa and a Masters of Theology (Th.M.) from Dallas Theological Seminary. I have two kids (Max and Atticus) and am married to Kim.",
+        "picture": "randy-pospisil-headshot.jpg",
+        "skills": [
+            {
+                "title": "Public Speaking",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad quos, eaque dignissimos libero atque aut magnam adipisci corrupti, placeat et iste amet harum voluptas debitis repellat reprehenderit enim unde!",
+                "photo":"randy-speaking.png"
+            },
+            {
+                "title": "Singing",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad quos, eaque dignissimos libero atque aut magnam adipisci corrupti, placeat et iste amet harum voluptas debitis repellat reprehenderit enim unde!",
+                "photo":"randy-singing.jpg"
+            },
+            {
+                "title": "Teaching",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad quos, eaque dignissimos libero atque aut magnam adipisci corrupti, placeat et iste amet harum voluptas debitis repellat reprehenderit enim unde!",
+                "photo":"randy-teaching.png"
+            },
+            {
+                "title": "Web Design",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ad quos, eaque dignissimos libero atque aut magnam adipisci corrupti, placeat et iste amet harum voluptas debitis repellat reprehenderit enim unde!",
+                "photo":"randy-coding.jpeg"
+            }
+        ]
     }
 ]
