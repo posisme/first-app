@@ -24,7 +24,7 @@ return(
         <div id='skillscards'>
           <SkillsGallery />
         </div>
-      
+        <hr />
       
       <div id='projects'>
         <ProjectList />

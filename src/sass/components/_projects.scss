@@ -1,50 +1,77 @@
 @use "../util" as u;
-.card {
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto auto 25px auto;
+}
+.project{
+    
+    max-width: 30%;
     background: var(--e-global-color-primary);
-    padding: 16px;
+    padding: 1%;
     border-radius: 5px;
-    @include u.box-shadow;
+    margin:auto;
     text-align: center;
-    max-height:200px;
-
-    
-    &__title {
-        font-size:1.5rem;
-        color:var(--e-global-color-text)
-    }
-    &__description {
-        font-size:1rem;
         
-    }
-    &__button{
-        background-color:var(--e-global-color-secondary) ;
-        color:white;
-        border:none;
-        padding:8px 12px;
-        margin:8px 0px;
-        cursor:pointer;
-        border-radius: 5px;
-        transition: background 0.3s;
-    }
-    
-    
-    &__link{
-        display:block;
-        color:var(--e-global-color-secondary);
-        text-decoration: underline;
-        margin-top:8px;
-        &:hover{
-            color:darken(black, 10%)
+
+        
+        &__title {
+            font-size:1.5rem;
+            color:var(--e-global-color-text)
         }
-    }
+        &__description {
+            font-size:1rem;
+            
+        }
+        &__button{
+            background-color:var(--e-global-color-secondary) ;
+            color:white;
+            border:none;
+            padding:8px 12px;
+            margin:8px 0px;
+            cursor:pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        
+        &__link{
+            display:block;
+            color:var(--e-global-color-secondary);
+            text-decoration: underline;
+            margin-top:8px;
+            &:hover{
+                color:darken(black, 10%)
+            }
+        }
+    
 }
 
-
-.projects-detail{
+.project-detail{
     padding: 20px;
     text-align: center;
     &__title{
         font-size:2rem;
-        color:var(--e-global-color-primary);
+        
+    }
+    &__short{
+        font-size:1.4rem;
+    }
+    &__long{
+        font-size:1rem;
+        font-weight: 100;
+    }
+    &__gitlink{}
+    &__link{
+        display:block;
+        color: white;
+        background-color: var(--e-global-color-secondary);
+        padding:5px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:u.rem(5);
+        width:u.rem(100);
+        text-decoration: none;
     }
 }
