@@ -5,6 +5,10 @@ import "./index.css";
 import "./sass/styles.scss";
 import BioCards from "./components/BioCard/BioCard.jsx"
 import SkillsGallery from "./components/SkillsCard/SkillsGallery.jsx"
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import ProjectList from "./components/ProjectCard/ProjectList.jsx"
+import ProjectDetail from "./components/ProjectCard/ProjectDetail.jsx"
+import Home from "./components/Home/Home.jsx"
 
 const apiCall = () => {
   axios.get('http://localhost:3000').then((data) => {
@@ -15,32 +19,14 @@ const apiCall = () => {
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <header className='header'>
-      <div className="wrapper header__wrapper">
-        <img className="header__logo" src="cornerstone-logo.png" alt="Cornerstone Church"  />
-        <h1 className="header__title">Cornerstone Church Mission Trip</h1>
-      </div>
     
-    </header>
-    <main className="main">
-      
-      <div className="wrapper">
-      <h2 className="main__meettheteam">Meet The Team</h2>
-        <div id='biocards'>
-          <BioCards />
-        </div>
-        <hr />
-        <div id='skillscards'>
-          <SkillsGallery />
-        </div>
-      </div>
-      
-    </main>
-    <footer className="footer">
-      <div className="wrapper">
-        <p className="footer__copy">&copy;2025 Randy Pospisil</p>
-      </div>
-      
-    </footer>
+      <Router>
+        <Routes>
+            <Route path="/"  element={<Home />}/>
+            <Route path="/projects/:id" element={<ProjectDetail />} />
+        </Routes>
+      </Router>
+     
+    
   </StrictMode>
 );

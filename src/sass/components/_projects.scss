@@ -1,0 +1,50 @@
+@use "../util" as u;
+.card {
+    background: var(--e-global-color-primary);
+    padding: 16px;
+    border-radius: 5px;
+    @include u.box-shadow;
+    text-align: center;
+    max-height:200px;
+
+    
+    &__title {
+        font-size:1.5rem;
+        color:var(--e-global-color-text)
+    }
+    &__description {
+        font-size:1rem;
+        
+    }
+    &__button{
+        background-color:var(--e-global-color-secondary) ;
+        color:white;
+        border:none;
+        padding:8px 12px;
+        margin:8px 0px;
+        cursor:pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    
+    
+    &__link{
+        display:block;
+        color:var(--e-global-color-secondary);
+        text-decoration: underline;
+        margin-top:8px;
+        &:hover{
+            color:darken(black, 10%)
+        }
+    }
+}
+
+
+.projects-detail{
+    padding: 20px;
+    text-align: center;
+    &__title{
+        font-size:2rem;
+        color:var(--e-global-color-primary);
+    }
+}
