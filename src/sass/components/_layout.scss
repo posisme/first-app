@@ -52,6 +52,16 @@ body {
             margin:0;
         }
     }
+    &__button{
+        background-color: transparent;
+        border:0;
+        &--light{
+            color:white;
+        }
+        &--dark{
+            color:black;
+        }
+    }
 }
 .main {
     background-color: var(--e-global-color-primary);

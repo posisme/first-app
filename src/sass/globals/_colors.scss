@@ -32,3 +32,33 @@
     font-family: var(--e-global-typography-primary-font-family), Sans-serif;
     font-weight: var(--e-global-typography-primary-font-weight);
 }
+.dark-mode{
+        --e-global-color-primary: #034224;
+        --e-global-color-secondary: #1a2723;
+        --e-global-color-text: #d8d7da;
+        --e-global-color-accent: #7c726b;
+        --e-global-color-78ae6df: #121111;
+        --e-global-color-2061619: #414142;
+        --e-global-color-b07bd68: #4C4C4C;
+        --e-global-color-83d4f3d: #636467;
+        --e-global-color-8b7c808: #9D9FA2;
+        --e-global-color-7b39431: #B2B4B6;
+        --e-global-color-e8d4abc: #E5E0D9;
+        --e-global-color-5bc8910: #F5F5F0;
+        --e-global-color-0eec32a: #FFFFFF;
+        --e-global-color-f8b4dfc: #486B60;
+        --e-global-color-2519fa8: #71A28A;
+        --e-global-color-eebd36d: #C9D0C6;
+        --e-global-typography-primary-font-family: "Source Sans Pro";
+        --e-global-typography-primary-font-weight: 600;
+        --e-global-typography-secondary-font-family: "Libre Baskerville";
+        --e-global-typography-secondary-font-size: 3.5em;
+        --e-global-typography-secondary-font-weight: 400;
+        --e-global-typography-text-font-family: "Source Sans Pro";
+        --e-global-typography-text-font-weight: 400;
+        --e-global-typography-accent-font-family: "Libre Baskerville";
+        --e-global-typography-accent-font-weight: 500;
+        color: var(--e-global-color-text);
+        font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+        font-weight: var(--e-global-typography-primary-font-weight);
+    }

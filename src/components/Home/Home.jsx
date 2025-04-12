@@ -2,17 +2,12 @@ import { StrictMode } from "react";
 import BioCards from "../BioCard/BioCard.jsx"
 import SkillsGallery from "../SkillsCard/SkillsGallery.jsx"
 import ProjectList from "../ProjectCard/ProjectList.jsx"
-
+import { useParams, Link } from "react-router-dom";
+import {HeaderBP,FooterBP} from "./HeaderFooter.jsx"
 function Home(){
 return(
   <StrictMode>
-    <header className='header'>
-      <div className="wrapper header__wrapper">
-        <img className="header__logo" src="cornerstone-logo.png" alt="Cornerstone Church"  />
-        <h1 className="header__title">Cornerstone Church Mission Trip</h1>
-      </div>
-    
-    </header>
+    <HeaderBP />
     <main className="main">
       
       <div className="wrapper">
@@ -31,12 +26,7 @@ return(
       </div>
     </div>
     </main>
-    <footer className="footer">
-      <div className="wrapper">
-        <p className="footer__copy">&copy;2025 Randy Pospisil</p>
-      </div>
-      
-    </footer>
+    <FooterBP />
     
   </StrictMode>
 );
