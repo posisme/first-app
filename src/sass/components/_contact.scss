@@ -1,0 +1,51 @@
+@use "../util/" as u;
+
+.contact {
+    
+    margin:auto;
+    margin-block-end: 25px;
+    padding:u.rem(25);
+    background-color: var(--e-global-color-primary);
+    &__wrapper{}
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__label{
+        padding:u.rem(10);
+        color:white;
+        width:150px;
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+         @include u.breakpoint(large){
+            flex-direction: row;
+         }
+    }
+    & input{
+        max-width:50ch;
+        margin-block-end: u.rem(25);
+        height:1.5rem;
+    }
+    & textarea{
+        
+        width:80%;
+        height:u.rem(50);
+        display:block;
+    }
+    &__error{
+        margin-left:u.rem(5);
+    }
+    &__buttonbar{
+        padding:u.rem(15);
+    }
+    &__submit{
+        width:u.rem(100);
+        border-radius: 5px;
+        background-color: var(--e-global-color-secondary);
+        color:white;
+        padding:u.rem(5);
+    }
+    
+}
