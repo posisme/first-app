@@ -21,11 +21,11 @@ const apiCall = () => {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     
-      <Router>
+      <Router basename="/first-app">
         <Routes>
-            <Route path="./"  element={<Home />}/>
-            <Route path="./projects/:id" element={<ProjectDetail />} />
-            <Route path="./contact" element={<ContactForm />} />
+            <Route path="/"  element={<Home />}/>
+            <Route path="/projects/:id" element={<ProjectDetail />} />
+            <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </Router>
      
